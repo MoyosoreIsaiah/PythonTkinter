@@ -18,7 +18,7 @@ full_name_var = tk.StringVar()
 email_var = tk.StringVar()
 phone_var = tk.StringVar()
 
-terms_var = tk.BooleanVar(value=False)
+terms_var = tk.BooleanVar()
 learning_mode_var = tk.StringVar(value="")
 experience_var = tk.StringVar(value="")
 
@@ -188,13 +188,13 @@ terms_check = tk.Checkbutton(
     form_frame,
     text="I agree to the registration terms and conditions.",
     variable=terms_var,
-    bg="black", fg="white"
+    fg="white", bg="black"
 )
 terms_check.grid(
     row=10, column=0, columnspan=2,
     sticky="w", padx=5, pady=5
 )
-
+tk.Radiobutton
 
 #REGISTER FUNCTION
 
